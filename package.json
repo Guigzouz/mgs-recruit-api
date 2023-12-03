@@ -1,8 +1,29 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
   },
   "scripts": {
     "start": "node app.js"
-  }
+  },
+  "name": "mgs-recruit-api",
+  "version": "1.0.0",
+  "description": "mgs recruit api, gives various info for new mgs recruits",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guigzouz/mgs-recruit-api.git"
+  },
+  "keywords": [
+    "api",
+    "mgs",
+    "recruit"
+  ],
+  "author": "Guillaume BENARD",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Guigzouz/mgs-recruit-api/issues"
+  },
+  "homepage": "https://github.com/Guigzouz/mgs-recruit-api#readme"
 }
