@@ -1,17 +1,23 @@
 const express = require("express");
+const cors = require("cors");
+
 const db = require("./config/db");
 const mongoose = require("mongoose");
 
 const app = express();
 const port = 3000;
 
-// Import recruit routes
-const recruitRoutes = require("./src/routes/index");
+// Import  routes
+const routes = require("./src/routes/index");
 
-// Use recruit routes with a specific path, for example "/recruit"
-app.use("/recruit", recruitRoutes);
+// Use  routes with a specific path, for example "/"
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.use(cors());
+
+app.use(express.json());
+app.use("/", routes);
+
+// app.get("/", (req, res) => res.send("Hello World!"));
 db();
 
 // const kittySchema = new mongoose.Schema({

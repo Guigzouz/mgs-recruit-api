@@ -7,14 +7,12 @@ The first goal is to : give a random mgs recruit codename to anyone wanting one
 
 this endpoint will allow anyone to post a new codename (first name or last name or both), this codename will then go through a verification and in the end will populate the db
 
-2. Additionnal random infos for the recruit :
+2. Putting up swagger on this bitch
 
-Codenames are great but what about some titles (BOSS, BIG BOSS, etc.. ) ? life stats ? some being rarest than others
+3. Endpoint where people can propose their own codenames adjectives / nouns so that the pool of randomly chosed names becomes better
 
-3. AI Generate picture of recruit :
+4. Support profile picture in a mgs:PW style for each users / recruits
 
-Prompting an AI to generate a mgs:peacewalker style picture of the recruit and sending it to the client
+## Connection with MGS-Motherbase
 
-4. Website :
-
-would be nice to have a website for the front end that will allow to generate recruits and build your own motherbase (whole new project/repo)
+Now this api endpoint will also serve as a user database for the myDigitalSchool project "mgs-motherbase" the two of them combined will create a user experience in the theme of metal gear solid motherbase managemement
