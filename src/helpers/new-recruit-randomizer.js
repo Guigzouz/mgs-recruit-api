@@ -1,6 +1,6 @@
 // helpers/new-recruit-randomizer.js
 
-function generateRandomRecruit() {
+function generateRandomRecruit(motherbase_id) {
   const adjectives = [
     "Silent",
     "Revolver",
@@ -47,6 +47,7 @@ function generateRandomRecruit() {
     mess_hall_points: generateRandomPoints(),
     medical_points: generateRandomPoints(),
     intelligence_points: generateRandomPoints(),
+    motherbase_id: motherbase_id,
   };
 }
 
@@ -59,14 +60,14 @@ function generateRandomCodename() {
     "Savage",
     "Lone",
     "Eagle",
-    "Iron",
-    "Swift",
+    "Revolver",
+    "Shotgun",
     "Fierce",
   ];
   const userNouns = [
     "Ghost",
     "Specter",
-    "Blade",
+    "Snake",
     "Phoenix",
     "Lion",
     "Assassin",
