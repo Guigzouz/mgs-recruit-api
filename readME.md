@@ -1,18 +1,45 @@
-As mentionned in the description the point of this project is to develop for the fun of it while offering an API for MGS series enthusiasts.
-The first goal is to : give a random mgs recruit codename to anyone wanting one
+## mgs-recruit-api
 
-## IMPROVMENT Ideas :
+This repository is a MyDigitalSchool project intervening in the context of a mobile/react development course it is also a project i meant to do on a personal level being a fanboy of the metal gear solid universe
 
-1. POST new name suggestion endpoint :
+The following repository is an expressJs api paired with a mongodb database dockerized
 
-this endpoint will allow anyone to post a new codename (first name or last name or both), this codename will then go through a verification and in the end will populate the db
+The project in itself aims to give to provide [mgs-motherbase-pwa](https://github.com/Guigzouz/mgs-motherbase-pwa) with user management as well as scorepoints and other important informations that cannot be stored server-side
 
-2. Putting up swagger on this bitch
+## how to launch
 
-3. Endpoint where people can propose their own codenames adjectives / nouns so that the pool of randomly chosed names becomes better
+**_required :_**
 
-4. Support profile picture in a mgs:PW style for each users / recruits
+- docker
+- nodeJs >= 20
 
-## Connection with MGS-Motherbase
+Clone the repository and follow the next steps
+Be sure to fill your own .env !
 
-Now this api endpoint will also serve as a user database for the myDigitalSchool project "mgs-motherbase" the two of them combined will create a user experience in the theme of metal gear solid motherbase managemement
+```
+docker compose up -d
+```
+
+```
+npm install
+```
+
+```
+npm run start
+```
+
+open the link in your browser (usually localhost:3000)
+
+## how to launch the front-end
+
+this repository in itself has yet not much interest in itself, to use it to its full potential you need to clone and launch the [mgs-motherbase-pwa](https://github.com/Guigzouz/mgs-motherbase-pwa) , follow the repo's own readme to successfully launch it
+
+## what comes next ?
+
+As of now the project is at a very basic level, and the gmp_count is yet just a redux countSlice that increases your score (much like an idle game), but the purpose is not to make an idle game but rather a management game worldwide, here below a list of features that i plan on doing next
+
+- Overall scoreboard of users gmp count
+- "External Ops" that will allow two users's motherbase to "fight" and gain/loose resources
+- "R&D" -> for better overall technology (multplicator of strength for a unit)
+- Recruits details -> In-depth customization of each unit & randomly generated images of them
+- Putting up swagger for better api documentation
